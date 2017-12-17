@@ -70,28 +70,32 @@
         </table>
         <!-- Sukuriame "Submit" mygtuką, pildymo forma, index nurodo į kokį puslapį nueina duomenys, "post" užkoduoja duomenis, "get" neužkoduoja -->
 
-        <form class="" action="index.html" method="post">
+        <form class="" action="index.html" method="get">
             <br>
             <br>
             <!-- Aprašymo sukurimas -->
             <label>Vartotojo vardas</label>
             <!-- Sukuriame įvedimo laukus "input" įvedimo laukų rūšys gali būti iki 10 -->
             <input type="text" name="vardas" value="" placeholder="Vardas">
-            <br>
-            <br>
+
             <label>Vartotojo slaptažodis</label>
-            <input type="password" name="" value="">
-            <br>
-            <br>
+            <input type="password" name="pass" value="" required>
+
             <label>El.paštas</label>
-            <input type="email" name="" value="" placeholder="info@info.com">
-            <br>
-            <br>
+            <input type="email" name="elpastas" value="" placeholder="info@info.com">
+
             <label>Amžius</label>
-            <input type="number" name="" value="">
+            <input type="number" name="age" value="">
 
+            <textarea name="name" rows="8" cols="30"></textarea>
+
+            <input type="date" name="Birthday" value="">
         </form>
+        <!-- Formoje, kad veiktu BUTINAI turi buti typr "submit" -->
 
+        <button type="submit" name="button">Registracija</button>
+        <!-- Arba -->
+        <input type="submit" name="" value="Registracija">
 </body>
 
 </html>
