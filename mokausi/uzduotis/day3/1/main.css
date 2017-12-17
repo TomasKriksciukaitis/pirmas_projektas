@@ -1,0 +1,44 @@
+h1 {
+    color: blue;
+}
+
+.fonas1 {
+    background-color: #B2B2B2;
+}
+
+.fonas2 {
+    background-color: orange;
+}
+
+.fonas3 {
+    background-color: red;
+}
+
+.didelis-tekstas {
+    font-size: 30px;
+
+    /* matavimo vienetai: px, em (žiūri į tėvo dydį), rem, % */
+}
+
+.plotis-100 {
+    width: 100px;
+}
+
+div h2 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+b {
+    color: #ffed00;
+}
+
+#logotipas {
+    width: 200px;
+    height: 200px;
+    /*opacity yra permatomnumas nuo 0 iki 1 */
+    opacity: 0.2;
+}
