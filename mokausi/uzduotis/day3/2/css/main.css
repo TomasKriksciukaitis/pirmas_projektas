@@ -1,0 +1,48 @@
+/* Rėmelius įskaičiuojame į elemto plotį */* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    /*tevui uzdeti position relative*/
+    position: absolute;
+    /*kiek nutoles nuo kaires puses*/
+    right: 10px;
+    top: 0px;
+}
+
+article {
+    position: relative;
+    /* atstumimas zemyn*/
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*Elementų išdėstymas vienoje eilutėje*/
+    width: 30%;
+    float: left;
+    border: solid 1px #000;
+    background-color: #A1A1A1;
+    margin-left: 2.5%;
+}
+
+article:last-of-type {
+    margin-right: 2%;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.rodyti-eiluteje {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2.5%;
+}
+
+body {
+    margin: 0;
+    }
