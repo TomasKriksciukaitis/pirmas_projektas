@@ -1,20 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>mokomes htmlo</title>
-    <meta name="description" content="mano pirmasis projektas, kuri pradejau mokintis siekiant ismokti kurti svetaines">
-  </head>
 
+<head>
+  <meta charset="utf-8">
+  <title>mokomes htmlo</title>
+  <meta name="description" content="mano pirmasis projektas, kuri pradejau mokintis siekiant ismokti kurti svetaines">
+</head>
 
-  <body>
-    <h1>musu puslapis</h1>
-    <h2>musu puslapis</h2>
-    <h3>musu puslapis</h3>
-    <h4>musu puslapis</h4>
-    <h5>musu puslapis</h5>
-    <h6>musu puslapis</h6>
+<body>
+    <!-- Mokausi antraštes -->
+    <h1>Tekstas</h1>
+    <h2>Tekstas</h2>
+    <h3>Tekstas</h3>
+    <h4>Tekstas</h4>
+        <!-- Mokausi įdėti paragrafą -->
+        <p>
+            <!-- komanda "Lorem" įveda tekstą -->
+            Lorem <b>ipsum dolor</b> sit amet, <i>consectetur adipisicing</i> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse <u>cillum dolore eu fugiat nulla</u> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- Mokausi įdėti nuorodą -->
+        <a href="http://google.com" target="_blank">
+            Registruotis
+        </a>
+        <div>
+            <!-- Mokausi įdėtipaveiksliukus, su elementu "div" -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAAfiSVfPlngm3d_Ed6u3DN8-3M6u6X45PQwuQ7nva1SlHoIlEqg" alt="paveikslo aprašymas, kuris įkeltas iš interneto">
+        </div>
+        <div>
+            <!-- img paveiksliukui paimti nurodom adresą. ./ nurodo "ieškok čia" -->
+            <!-- <img src="./img/arduino1.jpg" alt="paveikslo aprašymas, kuris įkeltas iš interneto"> -->
+        </div>
+        <!-- Nauja eilutė -->
+        <br>
+            <!-- span komanda padeda išskirti kelis pasirinktus žodžius, pagalba CSS -->
+            Lorem ipsum <span>dolor sit amet, consectetur adipisicing elit, sed do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <!-- Lentelė -->
+        <table>
+            <th> <!-- antraštė -->
+                <tr> <!-- eilutė -->
+                    <th>Vardas</th>
+                    <th>Pavardė</th>
+                    <th>Telefonas</th>
+                </tr>
+            </th>
+            <tbody>
+                <tr>
+                    <td>Tomas</td>
+                    <td>Antanaitis</td>
+                    <td>862026377</td>
+                </tr>
+                <tr>
+                    <td>Romas</td>
+                    <td>Adomaitis</td>
+                    <td>865238925</td>
+                </tr>
+                <tr>
+                    <td>Janina</td>
+                    <td>Žukienė</td>
+                    <td>862002033</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">* telefono numerius naudoti asmeniui sutikus</td>
+                </tr>
+            </tfoot>
 
+        </table>
+        <!-- Sukuriame "Submit" mygtuką, pildymo forma, index nurodo į kokį puslapį nueina duomenys, "post" užkoduoja duomenis, "get" neužkoduoja -->
 
-  </body>
+        <form class="" action="index.html" method="post">
+            <br>
+            <br>
+            <!-- Aprašymo sukurimas -->
+            <label>Vartotojo vardas</label>
+            <!-- Sukuriame įvedimo laukus "input" įvedimo laukų rūšys gali būti iki 10 -->
+            <input type="text" name="vardas" value="" placeholder="Vardas">
+            <br>
+            <br>
+            <label>Vartotojo slaptažodis</label>
+            <input type="password" name="" value="">
+            <br>
+            <br>
+            <label>El.paštas</label>
+            <input type="email" name="" value="" placeholder="info@info.com">
+            <br>
+            <br>
+            <label>Amžius</label>
+            <input type="number" name="" value="">
+
+        </form>
+
+</body>
+
 </html>
