@@ -1,3 +1,21 @@
 http://htmlcheatsheet.com/ 
 
 https://www.w3schools.com/
+
+https://necolas.github.io/normalize.css/
+
+google chrome iskiepis: "Emmet Re:view (parodo kaip atrodis tavo svetaine ant ivairiu browseriu)
+
+Bootstrap 4 cheat sheet - The ultimate list of Bootstrap classes
+
+https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
+
+https://www.sololearn.com/Courses
+
+https://www.coursera.org/
+
+https://www.freecodecamp.org/
+
+www.codeschool.com
+
+
