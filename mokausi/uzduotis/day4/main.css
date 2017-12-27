@@ -1,0 +1,28 @@
+h2 {
+    color: blue;
+
+    /* fono nuotrauka */
+    background-image: url("1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 900px;
+
+    background-position-y: -25px;
+    background-position-x: 50px;
+}
+
+/* hover, after, before - text */
+/* kai užvedį pelę */
+h2:hover {
+    background-color: red;
+}
+/*kai paspaudį pelę */
+h2:active {
+    background-color: brown;
+    content: "paspausta";
+}
+
+h2::after{
+    
+}
