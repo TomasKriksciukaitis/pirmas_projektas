@@ -1,4 +1,4 @@
-h2 {
+/* h2 {
     color: blue;
 
     /* fono nuotrauka */
@@ -10,19 +10,35 @@ h2 {
 
     background-position-y: -25px;
     background-position-x: 50px;
-}
+} */
 
 /* hover, after, before - text */
 /* kai užvedį pelę */
-h2:hover {
+
+/* h2:hover {
     background-color: red;
-}
+} */
+
 /*kai paspaudį pelę */
-h2:active {
+/* h2:active {
     background-color: brown;
     content: "paspausta";
+} */
+
+/* h2::after{
+    content: "  $"
+} */
+
+h2::before{
+    width: 250px;
+    height: 250px;
+    background-image: url("2.jpg");
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
 }
 
-h2::after{
-    
+h3:not(.raudonas){
+    font-weight: 900;
+    color: red;
 }
