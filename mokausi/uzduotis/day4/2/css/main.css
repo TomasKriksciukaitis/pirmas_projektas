@@ -70,3 +70,28 @@ article:last-of-type {
 body {
     margin: 0;
     }
+/* --------- TABLETS------------------*/
+/* max-width: 768px : nuo 0 iki 786 px ekrano plocio */
+@media (max-width: 786px) {
+    #one {
+        width: 45%;
+        margin-left: 3.333%;
+    }
+    #two {
+        width: 45%;
+        margin-left: 3.333%;
+    }
+    #three {
+        width: 93.33%
+        margin-left: 3.333%;
+        margin-top: 30%;
+    }
+}
+/* ----------- MOBILES-----------------*/
+@media (max-width: 425px) {
+    #one,
+    #two {
+        width: 93.33%;
+        margin-top: 20px;
+    }
+}
