@@ -1,0 +1,100 @@
+/* --------iskaiciuoja remelius i elemento plota------------- */
+{
+    box-sizing: border-box;
+}
+html {
+    background-color: #a1a1a1;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Indie Flower', cursive;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+body {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    background-color: #FF80FF;
+    height: 80px; /* 5vh = 5 % ekrano */
+}
+/* --menu-- */
+nav {
+    width: 60%;
+    padding-top: 8px;
+    display: inline-block;
+}
+nav li {
+    display: inline;
+    width:  24%;
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+ul {
+    padding-left: 0;
+}
+.texto-redagavimas {
+    word-spacing: 40px;
+    text-indent: 40px;
+}
+/* --menu END-- */
+#search {
+    display: inline-block;
+    width: 40%;
+    margin-left: -4px;
+}
+#search input {
+    height: 30px;
+    border: none;
+    width: 70%;
+}
+button {
+    margin-left: 20px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 8px 20px 8px 20px;
+}
+/* ----------------------MAIN----------------------------*/
+.fonas-ruzavas {
+    background-color: #FF80FF
+}
+section {
+    width: 75%;
+    float: left;
+    background-color: #fff;
+    padding: 40px 20px 30px 20px;
+}
+aside{
+    width: 23%;
+    margin-left: 2%;
+    float: left;
+    /* automatinis aukscio apskaiciavimas */
+    /* tevui butina uzdeti "overflow:hidden" komanda */
+    padding-bottom: 9999px;
+    margin-bottom: -99999px;
+}
+.float-left {
+    float: left;
+}
+.clear-fix {
+    clear: both;
+}
+/* tevui "main" uzdedam automatini paslepima uz ribu uzeinantiems welementamns */
+main {
+    overflow: hidden;
+    margin-top: 2%;
+    display: flex;
+}
+.centras {
+    margin-left: 30px;
+}
+.second_brother_center {
+    text-align: center;
+}
