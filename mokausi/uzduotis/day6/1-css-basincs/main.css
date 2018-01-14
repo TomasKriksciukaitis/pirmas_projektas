@@ -1,0 +1,13 @@
+/* --------iskaiciuoja remelius i elemento plota------------- */
+{
+    box-sizing: border-box;
+}
+h1 {
+    color: red;
+}
+.green{
+  color: green;
+}
+header.green {
+  color: blue;
+}
