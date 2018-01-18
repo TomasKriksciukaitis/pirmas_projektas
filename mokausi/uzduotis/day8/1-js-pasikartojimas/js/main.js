@@ -144,12 +144,95 @@ pazymiuVidurkis1(9, 8, 7, 9, 10);
 pazymiuVidurkis1(3, 4, 2, 3, 4);
 
 // 1.2 UZDUOTIS
-// parasyti f-ja getPazymiuVidurkis(x1, x2, x3, x4, x5), kuriai galima paduoti 5 kaintamuosius
+// parasyti f-ja getPazymiuVidurkis2(x1, x2, x3, x4, x5), kuriai galima paduoti 5 kaintamuosius
 // kuri apskaiciuoja idurki is paduotu 5 menesiu pazymiu (ir grazina atsakyma i iskvietimo vieta! "return atsakymas;")
 
+function getPazymiuVidurkis2(x1, x2, x3, x4, x5) {
+  var vidurkis = (x1 + x2 + x3 + x4 + x5) / 5;
+  return vidurkis;
+}
+var x = getPazymiuVidurkis2(8, 6, 10, 3, 4);
+console.log("musu vidurkis yra - ", x);
 
+// kiti pavyzdziai:
+
+function getAtlyginimas() {
+  var alga = 5 * 8 * 21; // lokalus kintamasis 840
+  return alga;
+}
+var x = getAtlyginimas(); // gausim 840
+console.log("menesines pajamos: ", x);
+
+function getName() {
+  var vardas ="testas";
+  // kodas
+  return vardas;
+  var vardas = "Justinas"; // nevykdis nes pries tai parasytas return, ties return f-ja nustoja veikusi
+}
+var x = getName();
+console.log(x);
 
  // 1.3 UZDUOTIS
- // parasyti f-ja getPazymiuVidurkis(), kuriai galima paduoti 5 kintamuosius ir jie getPazymiuVidurkis
+ // parasyti f-ja getPazymiuVidurkis3(), kuriai galima paduoti 5 kintamuosius ir jie getPazymiuVidurkis
  // default/ isankstine reiksme "0"
  // kuri apskaiciuoja vidurki is paduotu 5 menesiu pazymiu
+
+function getPazymiuVidurkis3(x1 = 0, x2 = 0, x3 = 0, x4 = 0, x5 = 0) {
+  var vidurkis = (x1 + x2 + x3 + x4 + x5) / 5;
+  return vidurkis;
+}
+var x = getPazymiuVidurkis3(10, 5);
+console.log("musu vidurkis su default reiksme yra - ", x);
+
+// ===== FOR ir LOOP ===========================================================
+
+// 1 UZDUOTIS
+// isvesti 50 kartu zodi "Azuolas" i konsole (! bandant tai padaryti atsiras skaicius 50)
+
+for (var i = 0; i < 50; i++) {
+  console.log("Azuolas",i); // jei norim kad konsoleje norite atspausdinti 50 zodziu
+  // reikia darasyti --> "console.log("Azuolas", i)", i raide pades atspausdinti visas reiksmes
+}
+
+// 1.2 UZDUOTIS
+// isvesti 50 kartu zodi <h2> Azuolas </h2> i <article> elementa su innerHTML pagalba
+
+for (var i =  0; i < 3; i++) {
+  // document.write("<h2> Azuolas </h2>", i);
+
+  document.querySelector("section").innerHTML += "Azuolas <br>";
+}
+
+// kiek uzdirbsime per 20 metu gaudami 680 eur., per menesi, kai alga kyla 1% kas men.
+
+var kiekMenesiu = 20 * 12;
+var menAtlyginimas = 680;
+var algosPokytis = 2; // 2%
+for (var i = 0; i < kiekMenesiu; i++) {
+  var padidejimas = (menAtlyginimas * algosPokytis) / 100;
+  // console.log("men 2 % padidejimas - ", padidejimas);
+  menAtlyginimas = menAtlyginimas + padidejimas;
+  // console.log("kasmenesine alga - ", menAtlyginimas);
+}
+console.log("alga po dvidesimties metu i men., bus - ", menAtlyginimas);
+
+// 2 A UZDUOTIS
+// sukurti f-ja printX(xx) i browser langa
+
+function printX(tekstas) {
+  console.log(tekstas);
+}
+// printX("tomas");
+
+// 2 B UZDUOTIS
+// paleisti f-ja printX 100 kartu
+
+for (var i = 0; i < 100; i++) {
+  printX("alga:" + (680 +i));
+  }
+
+// 3 UZDUOTIS
+// paleisti f-ja printX 12 kartu ir atspausdinti <img... >
+
+// 4 UZDUOTIS
+// sukurti f-ja piestiEilute(x); spausdintiStulpeli(x); i konsoles
