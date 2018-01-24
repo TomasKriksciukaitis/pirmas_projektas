@@ -74,3 +74,24 @@ console.log("nukopijuota masyvo dalis su slice komanda:", z);
 z.push("RAMUNAS");
 console.log("papildytas masyvas z: ", z);
 console.log("originalus masyvas sarasas: ", sarasas);
+
+
+// 2 UZDUOTIS
+// atspausdinsim masyva su FOR ciklu:
+
+for (var i = 0; i <visiSarasai.length; i++) {
+  var g = visiSarasai[i];
+  console.log("printFOR ", g);
+}
+
+
+// 3 UZDUOTIS
+// atsispausdinsim masyva su WHILE ciklu:
+
+// susikursim kintamaji t (cia betkoks gali buti)
+var t = 0;
+while (t < visiSarasai.length) {
+  var h = visiSarasai[t];
+  console.log("printWHILE ", h);
+  t++;
+}
