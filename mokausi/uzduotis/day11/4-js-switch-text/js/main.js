@@ -82,3 +82,39 @@ function pazymiuVidurkis(x1, x2, x3, x4, x5) {
   console.log("pazymiu vidurkis - ", vidurkis);
 }
 pazymiuVidurkis(6, 5, 9, 10, 8);
+
+// galima susikurti objekta ir lengvesniu budu susivesti duomenis:
+
+var mokinys = {
+  vardas:"Tomas",
+  pavarde: "Tomulaitis",
+  klase: "8a",
+  pazymiai: [6, 5, 9, 10, 8]
+}
+console.log(mokinys);
+
+// UZDUOTIS: sukurkite 2 objektus:
+// 1) tevas: vardas, pavarde, vaikas: {}
+// 2) vaikas: klase, vardas
+// 3.0) pakeisti tecio varda
+// 3.1) priskirti tevo objektui (kintamajam) vaikas
+
+var tevas = {
+  vardas: "Antanas",
+  pavarde: "Antanaitis",
+  vaikai: {}
+};
+console.log(tevas);
+tevas.vardas = "Pranas";
+console.log(tevas);
+
+var vaikas = {
+  klase: 8,
+  vardas: "Marius"
+};
+console.log(vaikas);
+
+// 3.1
+
+tevas.vaikai = vaikas;
+console.log(tevas);
