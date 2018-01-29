@@ -56,3 +56,5 @@ console.log(sarasas);
 
 
 // komandos "insertBefore", ir " insertAfter":
+// document.footer.insertBefore(text, footer);
+// document.body.insertAfter(text, body);
